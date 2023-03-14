@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Jakub Czachor
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{amssymb}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+ %\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\schoolHeading}[3]{
+\vspace{-12pt} \item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1}, #2 & #3 \\
+\end{tabular}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeSubheadingT}[2]{
+  \vspace{-10pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingTT}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.96\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, {#5} & {#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingT}[4]{
+  \vspace{15pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+\begin{center} \Huge \scshape \textbf{Jakub Czachor}
+\end{center}
+
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}  
+ {\href{mailto:czachorjjakub@gmail.com}czachorjjakub@gmail.com} & {\href{https://linkedin.com/in/jakub-czachor} linkedin.com/in/jakub-czachor} \\  \vspace{5pt} {(718) 840-9250} &  {\href{https://github.com/JakubCzachor} github.com/JakubCzachor}
+\end{tabular*}
+\vspace{-20pt}
+\section{}
+
+\small Software engineer proficient in Object-Oriented Programming and adept at developing solutions for complex problems, analyzing data, and working in Agile environments. Passionate about utilizing technology and data to understand and combat cybersecurity threats, with exposure to analyzing data breaches.\vspace{6pt}
+
+\section{Education}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+\textbf{CUNY Hunter College}, New York, NY & \textbf{Aug. 2018 -- June 2022} \\
+\textit{B.A. in Computer Science, Minors in Mathematics, and Physics} & \textbf{GPA}: 3.6/4.0
+\end{tabular*} 
+\begin{itemize} 
+    \item \vspace{-5pt} {\small\textbf{Relevant Coursework}: Computer Architecture $|$ Operating Systems $|$ Object Oriented Programming in C++ $|$ Software
+Analysis and Design $|$ Data Structures $|$ Algorithms $|$ Data Science (Python Based) $|$ Cyber Security} \vspace{-6pt}
+\item {\small\textbf{Awards}: 4x Dean's List}
+\end{itemize}
+
+
+\vspace{-3pt}
+  
+
+%-----------EDUCATION-----------
+
+
+%-----------EXPERIENCE-----------
+\section{Experience \& Ventures}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+        \resumeSubheading
+      {Software Engineer \& Co-Founder}{Jan. 2023 -- Present}
+      {Rxtend}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Led the creation of a SaaS tool for independent pharmacies, allowing for easy online prescription refilling with
+SMS notifications, inventory tracking, and prescription logging.}
+        \resumeItem{Developed a RESTful API using Express to enable communication between the front-end and back-end of a MERN stack application, allowing for seamless data exchange and improved user experience.}
+        \resumeItem{Designed the front end of the application using React and Figma, resulting in a user-friendly, scalable, and mobile-compatible platform.}
+        \resumeItem{Designed and developed the technical infrastructure for the service, including AWS EC2 and AWS Load Balancer
+setup, Jenkins CI/CD pipeline configuration, and Docker containerization of a MERN stack web application.}
+        \resumeItem{Conducted testing of the product on-site and identified over a 10\% decrease in turnaround time for prescription
+refills using Rxtend.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Jan. 2023 -- March 2023}
+      {Headstarter}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of 5 software engineers to build full-stack web applications using Google Firebase, ReactJS,
+Javascript, Flask, and MongoDB.}
+        \resumeItem{Applied software design patterns, used Agile methodology, and Git version control to develop software solutions.}
+        \resumeItem{Created mockups using Figma to ensure user-friendly design by simulating user interactions.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Web Developer}{Jan. 2020 -- March 2022}
+      {Grand Avenue Pharmacy}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Developed and launched a website, online prescription ordering system, and contact form resulting in call volume
+decrease of 20\% and an increase of online webpage visit conversions by 30\%.}
+        \resumeItem{Produced an interactive, accessible and user-friendly website with HTML and CSS, incorporating Google analytics
+which enabled tracking and optimization of user flow transforming the pharmacy’s online presence.}
+
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Random Compliment Generator} $|$ \emph{C++, AutoDesk Inventor, Eagle CAD}}{}
+          \resumeItemListStart
+            \resumeItem{Programmed a Random Compliment Generator using C++ and an Arduino microcontroller.}
+            \resumeItem{Improved its usability by designing and fabricating a custom 3D printed stand and PCB using AutoDesk Inventor
+and Eagle CAD.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Resume Parser} $|$ \emph{React.Js, Node.js, MongoDB, Express, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a scalable full-stack resume parser utilizing React, and Node.JS capable of identifying and extracting
+searchable keywords for improved resume optimization.}
+            \resumeItem{Implemented Express, and MongoDB in order to store files, as well as parsed documents, allowing for 100+ users,
+with efficient and fast querying of results.}
+          \resumeItemListEnd
+                    \resumeProjectHeading
+          {\textbf{Water Turbidity Analysis} $|$ \emph{Python, SciPy, Matplotlib, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Conducted an analysis of claims regarding a decline in water quality following the shutdown of the Delaware Aqueduct using Python and SciPy, MatPlotLib and Pandas packages.}
+            \resumeItem{Processed, analyzed and tested the hypothesis using linear regressions, proving the hypothesis incorrect.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, C++, Javascript, HTML/CSS, SQL, React, Flask, Node, Express, PHP, .NET, C\#} \\
+     \textbf{Software/Technical}{: Git, Google Firebase, MongoDB, MySQL, AWS, OOP, Docker, Jenkins, Linux} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+%
+%-----------PROGRAMMING SKILLS-----------
+
+
+
+%-------------------------------------------
+\end{document}
